@@ -14,4 +14,4 @@ services:
 networks:
   site1:
     external:
-      name: nextjs-docker_default
+      name: test-metakrew-dockerize_default
