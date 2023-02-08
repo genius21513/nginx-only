@@ -2,8 +2,7 @@ version: '3'
 
 services:
   nginx:
-    image: nginx:1.15-alpine
-    container_name: c_nginx
+    image: nginx:1.15-alpine    
     restart: unless-stopped
     volumes:
       - ./nginx:/etc/nginx/conf.d
@@ -15,4 +14,4 @@ services:
 networks:
   site1:
     external:
-      name: nextjs_web
+      name: nextjs-docker_default
