@@ -10,8 +10,8 @@ services:
     ports:
       - "80:80"
     networks:
-      - nextjs-docker
+      - site1
 networks:
-  nextjs-docker:
+  site1:
     external:
       name: nextjs-docker_default
