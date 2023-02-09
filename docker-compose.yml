@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  nginx:
+  web-server:
     image: nginx:1.15-alpine    
     restart: unless-stopped
     volumes:
@@ -10,8 +10,8 @@ services:
     ports:
       - 80:80
     networks:
-      - site1
+      - metakrew
 networks:
-  site1:
+  metakrew:
     external:
       name: test-metakrew-dockerize_default
