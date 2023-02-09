@@ -11,7 +11,11 @@ services:
       - 80:80
     networks:
       - metakrew
+      - nextjs
 networks:
   metakrew:
     external:
       name: metakrew_default
+  nextjs:
+    external:
+      name: nextjs-app_default
