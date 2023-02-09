@@ -14,4 +14,4 @@ services:
 networks:
   metakrew:
     external:
-      name: test-metakrew-dockerize_default
+      name: metakrew_default
